@@ -128,7 +128,7 @@
     <ClCompile Include="interface.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="functions.h" />
+    <ClInclude Include="lib_of_everything.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

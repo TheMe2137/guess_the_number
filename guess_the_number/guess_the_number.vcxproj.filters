@@ -26,7 +26,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="functions.h">
+    <ClInclude Include="lib_of_everything.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

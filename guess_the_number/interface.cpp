@@ -1,23 +1,20 @@
-#include <iostream> // standard input-output library (cout, cin)
-#include <string> 	// string library for using string data structure (std::string)
-#include "functions.h" // include header file for function declarations (starting_screen, gra, leaderboard)
-#include <vector> // include user class header file to access usernames vector
-
+#include "lib_of_everything.h" // include header file for function declarations (starting_screen, gra, leaderboard)
 using namespace std;
+int option;
+void print2(string text) {
+	cout << "************************************\n" << text << "\n************************************\n";
+}
 int starting_screen() {// starting screen function (returns option selected by user) little graphic design included :D
-	cout << "************************************" << endl;
-	cout << "*      WELCOME TO GUESS THE       *" << endl;
-	cout << "*            NUMBER GAME          *" << endl;
-	cout << "************************************" << endl;
-	cout << "* 1. Start Game                   *" << endl;
+	
+	print2("Welcome to my number game!");
+		print2("1.Start Game");
 	if (usernames.size() > 0) { // only show leaderboard option if there are usernames stored
-		cout << "* 2. View Top 5 Leaderboard       *" << endl;
+		print2("2.Show the Leaderboards!");
 	}
-	cout << "* 3. Exit                         *" << endl;
-	cout << "************************************" << endl;
-	cout << "Please select an option (1-3): \n************************************\n";
+	print2("3.Exit");
+	print2("Please select an option (1-3)");
 
-    int option;
+    
     cin >> option;
 
 	switch (option) { // switch case to handle user input and call appropriate functions (game, leaderboard, exit) its so damn cool
